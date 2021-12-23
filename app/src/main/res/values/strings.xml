@@ -1,16 +1,17 @@
 <resources>
-    <string name="app_name">记账宝</string>
-    <string name="string_name">Name</string>
-    <string name="string_price">Price</string>
-    <string name="string_ok">Ok</string>
-
+    <string name="app_name">MyBills</string>
+    <string name="icon">头像</string>
+    <string name="user_name">昵称</string>
+    <string name="user_word">一语</string>
+    <string name="user_word_detail">我是一个IU的小粉丝</string>
+    <string name="user_name_detail">小勤快</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="string_menu_add">添加</string>
     <string name="string_menu_edit">修改</string>
     <string name="string_menu_delete">删除</string>
-
     <string name="string_confirmation">确定</string>
     <string name="string_cancel">取消</string>
     <string name="string_confirm_delete">你确定要删除</string>
     <string name="hint">提示</string>
-
 </resources>

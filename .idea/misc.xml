@@ -3,14 +3,44 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.19114583333333332" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/drawable/button_default.xml" value="0.19114583333333332" />
         <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/drawable/ic_launcher_background.xml" value="0.15092592592592594" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/drawable/income_selector.xml" value="0.19114583333333332" />
         <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/drawable/outcome_selector.xml" value="0.21979166666666666" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/drawable/radius_click.xml" value="0.19114583333333332" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/drawable/shape_calc.xml" value="0.19114583333333332" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/drawable/shape_cash.xml" value="0.19114583333333332" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/drawable/text_selector.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/activity_add.xml" value="0.16197916666666667" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/activity_header.xml" value="0.17391304347826086" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/activity_header_data.xml" value="0.17391304347826086" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/activity_header_drawer.xml" value="0.17391304347826086" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/activity_header_toolbar.xml" value="0.17391304347826086" />
         <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/activity_input.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/activity_item_single.xml" value="0.18" />
         <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/count_item_holder.xml" value="0.1381340579710145" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/activity_my_view_text.xml" value="0.11770833333333333" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/activity_setting.xml" value="0.175" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/activity_user_image.xml" value="0.17391304347826086" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/activity_user_info.xml" value="0.175" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/activity_user_land.xml" value="0.17604166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/app_main.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/app_setting.xml" value="0.17604166666666668" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/app_toolbar.xml" value="0.1634963768115942" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/app_top_date.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/count_item_holder.xml" value="0.21" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/drawer_header.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/fragment_month_chart.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/fragment_month_list.xml" value="0.16145833333333334" />
         <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/income_selector.xml" value="0.16197916666666667" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/item_recycler_monthchart_rank.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/item_recycler_monthlist_header.xml" value="0.175" />
         <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/navigationview_layout.xml" value="0.19972826086956522" />
         <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/top_view_bar.xml" value="0.19972826086956522" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/layout/wechat_sort.xml" value="0.17760416666666667" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/menu/activity_main_drawer.xml" value="0.17760416666666667" />
+        <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/menu/menu_main_toolbar.xml" value="0.17760416666666667" />
         <entry key="..\:/AndroidStudioProjects/Count/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.15092592592592594" />
       </map>
     </option>
