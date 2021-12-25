@@ -10,6 +10,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -34,7 +35,8 @@ public class inputActivity extends AppCompatActivity implements View.OnClickList
     private TextView date;      //时间选择
     private TextView cash;      //收支选择
     private TextView WeChat;
-    private ImageView remark;   //
+    private ImageView remark;
+    private ImageView photo;
 
     private ViewPager viewpagerItem;
     private LinearLayout layoutIcon;
@@ -132,6 +134,7 @@ public class inputActivity extends AppCompatActivity implements View.OnClickList
         WeChat.setText("微信");
         cash.setText("支出");
 
+
         cash.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -208,6 +211,7 @@ public class inputActivity extends AppCompatActivity implements View.OnClickList
     protected void initWidget() {
         money = findViewById(R.id.note_money);
         method=findViewById(R.id.item_type_tv);
+        photo = findViewById(R.id.item_note_edit_iv);
         date = findViewById(R.id.note_date);
         cash = findViewById(R.id.note_cash);
         remark = findViewById(R.id.note_remark);

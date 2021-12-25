@@ -16,6 +16,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
@@ -24,6 +25,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -34,7 +36,7 @@ import com.jnu.count.data.DataBank;
 
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     private NavigationView navigationView;
     private View drawerHeader;
@@ -133,6 +135,62 @@ public class MainActivity extends AppCompatActivity {
     public void initData() {
         dataBank = new DataBank(MainActivity.this);
         countItems = dataBank.loadData();
+        String i=tIncome.getText().toString();
+        String j=tOutcome.getText().toString();
+        String k=tTotal.getText().toString();
+        Double value1=Double.parseDouble(i);
+        Double value2=Double.parseDouble(j);
+        Double value3=Double.parseDouble(k);
+        for(int z=0;z<countItems.size();z++)  //保存读取内存中原有账目的数值
+        {
+            String str="收入";
+            String x=countItems.get(z).getPrice();
+            Double value4=Double.parseDouble(x);
+            if(countItems.get(z).getInoutCome().equals(str))
+            {
+                value1=value1+value4;
+                value3=value3+value4;
+                tIncome.setText(value1.toString());
+            }
+            else {
+                value2 = value2 + value4;
+                value3 = value3 - value4;
+                tOutcome.setText(value2.toString());
+            }
+        }
+        tTotal.setText(value3.toString());
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.nav_home_page:    //同步账单
+                startActivity(new Intent(mContext,MainActivity.class));
+                break;
+            case R.id.nav_history_view:
+                //startActivity(new Intent(mContext,HistoryActivity.class));
+                break;
+            case R.id.nav_analysis:
+                //startActivity(new Intent(mContext,AnalysisActivity.class));
+                break;
+            case R.id.nav_classification_management:
+                break;
+            case R.id.nav_account_management:
+                break;
+            case R.id.nav_personal_center:
+                break;
+            case R.id.nav_search:
+                break;
+            case R.id.nav_copy:
+                break;
+            case R.id.nav_donate:
+                break;
+            case R.id.nav_help:
+                break;
+            default:
+                break;
+        }
+        return false;
     }
 
     private class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.MyViewHolder> {
@@ -157,6 +215,7 @@ public class MainActivity extends AppCompatActivity {
             holder.getTextViewName().setText(countItems.get(position).getName());
             holder.getTextViewPrice().setText(String.valueOf(countItems.get(position).getPrice()));
             holder.getTextViewWechat().setText(countItems.get(position).getWechat());
+            holder.getTextViewInOutCome().setText(countItems.get(position).getInoutCome());
         }
 
         @Override
@@ -173,6 +232,7 @@ public class MainActivity extends AppCompatActivity {
             private final ImageView imageView;
             private final TextView textViewName;
             private final TextView textViewWechat;
+            private final TextView textViewInOutCome;
 
             public MyViewHolder(View itemView) {
                 super(itemView);
@@ -181,6 +241,7 @@ public class MainActivity extends AppCompatActivity {
                 this.imageView=itemView.findViewById(R.id.item_note_edit_iv);
                 this.textViewName=itemView.findViewById(R.id.item_note_edit_tv);
                 this.textViewWechat = itemView.findViewById(R.id.item_note_wechat);
+                this.textViewInOutCome = itemView.findViewById(R.id.item_note_inOutcome);
                 itemView.setOnCreateContextMenuListener(this);
 
             }
@@ -199,6 +260,10 @@ public class MainActivity extends AppCompatActivity {
 
             public TextView getTextViewWechat() {
                 return textViewWechat;
+            }
+
+            public TextView getTextViewInOutCome() {
+                return textViewInOutCome;
             }
 
             @Override
@@ -263,6 +328,8 @@ public class MainActivity extends AppCompatActivity {
         tIncome = findViewById(R.id.income);
         tTotal = findViewById(R.id.total);
 
+        tOutcome.setLinkTextColor(Color.parseColor("#4d8ade"));
+        tIncome.setLinkTextColor(Color.parseColor("#4d8ade"));
         //初始化Toolbar
         toolbar.setTitle("IUBill");
         //toolbar.setLogo(R.drawable.ic_launcher_foreground);
@@ -365,7 +432,7 @@ public class MainActivity extends AppCompatActivity {
                     value2=value2+value4;
                 tOutcome.setText(value1.toString());
                 tTotal.setText(value2.toString());
-                tOutcome.setText(value3.toString());
+                tIncome.setText(value3.toString());
             }
         }
         else {

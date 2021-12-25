@@ -25,6 +25,9 @@
     <color name="colorPrimaryDarkBlue">#4E77FF</color>
     <color name="colorPrimaryBlue">#4E77FF</color>
     <color name="colorAccentBlue">#4E77FF</color>
+    <color name="colorBlue">#68b8f8</color>
+    <color name="colorToolbarBlue">#2396f3</color>
+    <color name="colorDataBlue">#8ecbfa</color>
 
     <!--基佬紫-->
     <color name="colorPrimaryDarkPurple">#A33DF9</color>

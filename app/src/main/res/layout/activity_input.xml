@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <RelativeLayout
         android:id="@+id/layout"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:background="?attr/colorPrimary"
+        android:layout_height="55dp"
+        android:background="@color/colorToolbarBlue"
         android:gravity="center_vertical">
 
         <RelativeLayout
@@ -22,9 +20,13 @@
                 android:id="@+id/back_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
                 android:onClick="onClick"
-                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingEnd="10dp"
                 android:src="@mipmap/back" />
 
         </RelativeLayout>
@@ -38,16 +40,22 @@
                 android:id="@+id/note_income"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="20px"
-                android:text="收支"
+                android:layout_marginEnd="10dp"
+                android:text="@string/inOutCome"
+                android:textColor="@color/textWhite"
                 android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/note_outcome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/note_income"
-                android:text="转账"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/note_income"
+                android:text="@string/changeMoney"
+                android:textColor="@color/textWhite"
                 android:textSize="15sp" />
         </RelativeLayout>
 
@@ -55,30 +63,33 @@
             android:id="@+id/add"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
             android:gravity="center_vertical"
             android:onClick="onClick"
-            android:paddingLeft="10dp"
-            android:text="再记一笔" />
+            android:paddingRight="0dp"
+            android:paddingStart="10dp"
+            android:text="@string/new_Bill"
+            android:textColor="@color/textWhite" />
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/select_layout"
-        android:layout_marginBottom="355dp">
+        android:layout_marginBottom="350dp"
+        android:background="@color/colorDataBlue">
 
         <TextView
             android:id="@+id/item_type_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
             android:layout_gravity="center"
-            android:paddingLeft="15dp"
-            android:paddingRight="10dp"
-            android:text="交通出行"
+            android:paddingStart="15dp"
+            android:paddingEnd="10dp"
+            android:text="@string/taix"
             android:textColor="#333333"
             android:textSize="26sp" />
 
@@ -147,7 +158,8 @@
             android:paddingRight="20dp"
             android:paddingBottom="7dp"
             android:text="支出"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+
             android:textSize="15sp" />
 
         <TextView
@@ -164,7 +176,7 @@
             android:paddingRight="20dp"
             android:paddingBottom="7dp"
             android:text="微信"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="15sp" />
 
         <TextView
@@ -180,7 +192,7 @@
             android:paddingRight="20dp"
             android:paddingBottom="7dp"
             android:text="日期"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="15sp" />
 
         <RelativeLayout
@@ -236,6 +248,9 @@
                     android:layout_centerInParent="true"
                     android:src="@mipmap/calc_del" />
             </RelativeLayout>
+            <View
+                style="@style/horizontal_decoration_style"
+                android:background="#8c8c8c" />
 
             <TextView
                 android:id="@+id/tb_calc_num_1"
@@ -528,6 +543,10 @@
                 android:textSize="20sp" />
 
 
+            <View
+            style="@style/horizontal_decoration_style"
+            android:background="#8c8c8c" />
+
             <TextView
                 android:id="@+id/calc_num_add"
                 android:layout_width="match_parent"
@@ -540,17 +559,20 @@
                 android:textColor="#000000"
                 android:textSize="20sp" />
 
+            <View
+            style="@style/horizontal_decoration_style"
+            android:background="#8c8c8c" />
 
             <TextView
                 android:id="@+id/tb_calc_num_done"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_weight="1"
-                android:background="?attr/colorPrimary"
+                android:background="@drawable/radius_click"
                 android:gravity="center"
                 android:onClick="onClick"
                 android:text="保存"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
 
         </LinearLayout>
