@@ -113,26 +113,28 @@ public class inputActivity extends AppCompatActivity implements View.OnClickList
         initWidget();
         initClick();
 
-        Intent intent=getIntent();
         String i= "0.00";
+        Intent intent=getIntent();
         String textName=intent.getStringExtra("name");
         String textPrice=intent.getStringExtra("price");
         String textWechat=intent.getStringExtra("wechat");
         String textInOutCome=intent.getStringExtra("inoutCome");
         int pictureId=intent.getIntExtra("PictureID",0);
 
-        if(i!=money.getText().toString()){
+        if(textName!=null){
             method.setText(textName);
             money.setText(textPrice);
             res=pictureId;
             WeChat.setText(textWechat);
             cash.setText(textInOutCome);
         }
-        //设置金额
-        money.setText(num + dotNum);
-        method.setText("房租水电");
-        WeChat.setText("微信");
-        cash.setText("支出");
+        else{
+            //设置金额
+            money.setText(num + dotNum);
+            method.setText("房租水电");
+            WeChat.setText("微信");
+            cash.setText("支出");
+        }
 
 
         cash.setOnClickListener(new View.OnClickListener() {
@@ -470,7 +472,7 @@ public class inputActivity extends AppCompatActivity implements View.OnClickList
         final SimpleDateFormat sdf = new SimpleDateFormat(" HH:mm:ss");
         final String crDate = days + sdf.format(new Date());
         if ((num + dotNum).equals("0.00")) {
-            Toast.makeText(this, "唔姆，你还没输入金额", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "请输入一个金额", Toast.LENGTH_SHORT).show();
             return;
         }
         else{

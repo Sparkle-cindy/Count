@@ -30,7 +30,7 @@
             android:layout_marginLeft="@dimen/view_margin"
             android:layout_marginRight="2dp"
             android:gravity="center_vertical"
-            android:textSize="@dimen/text12"
+            android:textSize="@dimen/text18"
             tools:text="分类名称" />
 
         <TextView

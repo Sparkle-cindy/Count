@@ -14,4 +14,8 @@
     <string name="string_cancel">取消</string>
     <string name="string_confirm_delete">你确定要删除</string>
     <string name="hint">提示</string>
+    <string name="inOutCome">收支</string>
+    <string name="changeMoney">转账</string>
+    <string name="new_Bill">再记一笔</string>
+    <string name="taix">交通出行</string>
 </resources>

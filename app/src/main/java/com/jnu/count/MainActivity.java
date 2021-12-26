@@ -36,7 +36,7 @@ import com.jnu.count.data.DataBank;
 
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+public class MainActivity extends AppCompatActivity{
 
     private NavigationView navigationView;
     private View drawerHeader;
@@ -161,37 +161,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         tTotal.setText(value3.toString());
     }
 
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.nav_home_page:    //同步账单
-                startActivity(new Intent(mContext,MainActivity.class));
-                break;
-            case R.id.nav_history_view:
-                //startActivity(new Intent(mContext,HistoryActivity.class));
-                break;
-            case R.id.nav_analysis:
-                //startActivity(new Intent(mContext,AnalysisActivity.class));
-                break;
-            case R.id.nav_classification_management:
-                break;
-            case R.id.nav_account_management:
-                break;
-            case R.id.nav_personal_center:
-                break;
-            case R.id.nav_search:
-                break;
-            case R.id.nav_copy:
-                break;
-            case R.id.nav_donate:
-                break;
-            case R.id.nav_help:
-                break;
-            default:
-                break;
-        }
-        return false;
-    }
 
     private class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.MyViewHolder> {
         private List<Count> countItems;
