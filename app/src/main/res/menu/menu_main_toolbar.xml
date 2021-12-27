@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group_bill">
+        <item
+            android:id="@+id/toolbar_share"
+            android:title="今日分享"
+            android:orderInCategory="0" />
+        <item
+            android:id="@+id/toolbar_share_word"
+            android:icon="@mipmap/drawer_assignment"
+            android:orderInCategory="100"
+            android:title="分享文字" />
+        <item
+            android:id="@+id/toolbar_share_photo"
+            android:icon="@mipmap/drawer_assignment"
+            android:orderInCategory="100"
+            android:title="分享图片"/>
+
+    </group>
+</menu>

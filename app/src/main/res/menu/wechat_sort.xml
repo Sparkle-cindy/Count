@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group_sort">
+        <item
+            android:id="@+id/toolbar_WeChat"
+            android:title="微信"
+            android:orderInCategory="0" />
+        <item
+            android:id="@+id/toolbar_xinJin"
+            android:orderInCategory="100"
+            android:title="现金" />
+        <item
+            android:id="@+id/toolbar_zhiFUBao"
+            android:orderInCategory="100"
+            android:title="支付宝"/>
+        <item
+            android:id="@+id/toolbar_none"
+            android:orderInCategory="100"
+            android:title="无账户"/>
+        <item
+            android:id="@+id/toolbar_addSort"
+            android:orderInCategory="100"
+            android:title="添加账户"/>
+    </group>
+
+</menu>

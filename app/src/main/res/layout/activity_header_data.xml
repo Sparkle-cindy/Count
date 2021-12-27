@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <LinearLayout android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="@color/colorBlue"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="净资产"
+            android:textColor="@color/textWhite"
+            android:textSize="15sp"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:singleLine="true"
+            android:layout_gravity="center"
+            android:text="0.00"
+            android:textColor="@color/textWhite"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_height="70dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimaryDarkGreen"
+                android:textSize="20sp"
+                android:singleLine="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本月收入(元)"
+                android:layout_gravity="center"
+                android:textColor="@color/textWhite"
+                android:textSize="13sp"
+                android:layout_marginTop="8dp"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top_out"
+            android:layout_weight="1.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/outcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="0.00"
+                android:textColor="@color/green"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本月支出(元)"
+                android:textColor="@color/textWhite"
+                android:layout_marginTop="8dp"
+                android:textSize="13sp"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

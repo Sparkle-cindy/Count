@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/group_bill"
+        app:menu="@animator/check">
+        <item
+            android:id="@+id/nav_home_page"
+            android:icon="@mipmap/drawer_assignment"
+            android:title="首页"/>
+        <item
+            android:id="@+id/nav_history_view"
+            android:icon="@mipmap/drawer_guide"
+            android:title="历史查看" />
+        <item
+            android:id="@+id/nav_analysis"
+            android:icon="@mipmap/drawer_assignment"
+            android:title="分析统计" />
+        <item
+            android:id="@+id/nav_classification_management"
+            android:icon="@mipmap/drawer_assignment"
+            android:title="分类管理" />
+        <item
+            android:id="@+id/nav_account_management"
+            android:icon="@mipmap/drawer_assignment"
+            android:title="账户管理" />
+        <item
+            android:id="@+id/nav_personal_center"
+            android:icon="@mipmap/drawer_assignment"
+            android:title="个人中心" />
+    </group>
+
+    <group android:id="@+id/group_setting"
+        app:menu="@animator/check">
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@mipmap/drawer_assignment"
+            android:title="账目搜索" />
+        <item
+            android:id="@+id/nav_copy"
+            android:icon="@mipmap/drawer_assignment"
+            android:title="立即备份" />
+        <item
+            android:id="@+id/nav_donate"
+            android:icon="@mipmap/drawer_assignment"
+            android:title="捐赠作者" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@mipmap/drawer_assignment"
+            android:title="设置" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@mipmap/drawer_assignment"
+            android:title="反馈帮助" />
+    </group>
+
+
+</menu>
